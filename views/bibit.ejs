@@ -1,42 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Tambah Data Bibit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Contact Us</h1>
-
-        <!-- Form untuk menambahkan data -->
-        <form action="/bibits/bibit" method="POST" class="mb-5">
-
+        <h1 class="text-center mb-4">Tambah Data Bibit</h1>
+        <form action="/bibit" method="POST">
             <div class="mb-3">
-                <label for="nama_bibit" class="form-label">nama_bibit</label>
-                <input type="text" id="nama_bibit" name="nama_bibit" class="form-control" placeholder="Masukkan nama_bibit" required>
+                <label for="nama_bibit" class="form-label">Nama Bibit</label>
+                <input type="text" id="nama_bibit" name="nama_bibit" class="form-control" required>
             </div>
             <div class="mb-3">
-                <label for="jenis_bibit" class="form-label">jenis_bibit</label>
-                <input type="jenis_bibit" id="jenis_bibit" name="jenis_bibit" class="form-control" placeholder="jenis_bibit" required>
+                <label for="jenis_bibit" class="form-label">Jenis Bibit</label>
+                <input type="text" id="jenis_bibit" name="jenis_bibit" class="form-control" required>
             </div>
             <div class="mb-3">
-                <label for="harga" class="form-label">harga</label>
-                <input type="harga" name="harga" class="form-control" placeholder="Masukkan Pesan" rows="4"
-                    required></textarea>
+                <label for="harga" class="form-label">Harga</label>
+                <input type="number" id="harga" name="harga" class="form-control" required>
             </div>
             <button type="submit" class="btn btn-primary">Kirim</button>
-            <a href="/bibits" class="btn btn-secondary">Lihat Kontak</a>
         </form>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFhCbHUJI6v+NIeDl4uZLhjtbs02JvBMKPQlPqVxFQnE4vxGmNWPIwW1T" crossorigin="anonymous">
-    </script>
 </body>
-
 </html>
