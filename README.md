@@ -6,8 +6,13 @@ halaman bibit
 
 halaman pupuk
 ![Screenshot 2024-11-23 220638](https://github.com/user-attachments/assets/0f45e374-85b8-4d81-9b31-69e91b4b935d)
-method 
 
+database
+![Screenshot 2024-11-23 231925](https://github.com/user-attachments/assets/aa0a56e3-6a1d-4143-8188-ea651e8733ca)
+
+![Screenshot 2024-11-23 231935](https://github.com/user-attachments/assets/42a0f12f-a0c2-471c-a26c-a561d6066df2)
+
+method 
 
 post
 ![Screenshot 2024-11-23 220955](https://github.com/user-attachments/assets/019aef16-7d2d-4bee-b0d8-0bf6373695ca)
