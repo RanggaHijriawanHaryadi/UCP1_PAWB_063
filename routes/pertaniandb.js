@@ -1,19 +1,26 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const db = require("../database/db");
+const db = require('../database/db'); // Pastikan koneksi database sudah benar
 
-// Rute untuk menambahkan data ke tabel bibit
+// Route POST untuk menambahkan data bibit
 router.post("/bibit", (req, res) => {
     const { nama_bibit, jenis_bibit, harga } = req.body;
 
+    console.log("Data yang dikirimkan:", { nama_bibit, jenis_bibit, harga });
+
+    // Query untuk memasukkan data ke dalam database
     db.query(
         "INSERT INTO bibit_tanaman (nama_bibit, jenis_bibit, harga) VALUES (?, ?, ?)",
         [nama_bibit, jenis_bibit, harga],
-        () => {
-            console.log("Data berhasil dimasukkan.");
-            res.send("Data berhasil disimpan!");
+        (err) => {
+            if (err) {
+                console.error("Error inserting data:", err.message);
+                return res.status(500).send("Error inserting data.");
+            }
+            res.redirect("/bibit");
         }
     );
 });
+
 
 module.exports = router;
