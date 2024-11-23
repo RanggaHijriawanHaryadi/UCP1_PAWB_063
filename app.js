@@ -1,6 +1,8 @@
+
 const express = require("express");
 const bodyParser = require("body-parser");
-const contactRoutes = require("./routes/pertaniandb"); // Mengimpor route kontak
+const contactRoutes = require("./routes/pertaniandb");
+ // Mengimpor route kontak
 const path = require("path");
 
 const app = express();
@@ -17,8 +19,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs'); // Menggunakan EJS sebagai view engine
 
 // Routes
-app.use("/bibits", contactRoutes);
-
+app.use("/bibits", contactRoutes); // Untuk tabel bibit
 app.use("/pupuks", contactRoutes); // Untuk tabel pupuk
 
 
